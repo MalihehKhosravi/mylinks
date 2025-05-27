@@ -72,6 +72,7 @@
       font-size: 14px;
       cursor: pointer;
       color: #0077cc;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -93,5 +94,54 @@
     </a>
 
     <div class="contact">
-      <p>📞 <a href="tel:09140649400">09140649400</a></p>
-      <p>✉️ <a href="mailto:MalihehKhosrav
+      <p>📞 <strong><a href="tel:09140649400">09140649400</a></strong></p>
+      <p>✉️ <strong><a href="mailto:MalihehKhosravi4578@gmail.com">MalihehKhosravi4578@gmail.com</a></strong></p>
+    </div>
+
+    <div class="qr-code">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://MalihehKhosravi.github.io/mylinks/&size=150x150" alt="QR Code">
+    </div>
+
+    <div class="lang-switch" onclick="switchToEn()">نمایش English</div>
+  </div>
+
+  <div class="container" id="content-en" style="display:none;">
+    <img src="https://github.com/MalihehKhosravi/mylinks/blob/main/newsha-logo.jpg?raw=true" class="logo" alt="Logo">
+    <h2>Top Medicine</h2>
+
+    <a class="link-button" href="https://t.me/TebbeBartarKhosravi" target="_blank">
+      <img src="https://github.com/MalihehKhosravi/mylinks/blob/main/telegram-logo.png?raw=true" alt="Telegram">Telegram Channel
+    </a>
+
+    <a class="link-button" href="https://splus.ir/TebbeBartarKhosravi" target="_blank">
+      <img src="https://github.com/MalihehKhosravi/mylinks/blob/main/soroush-logo.png?raw=true" alt="Soroush">Soroush Channel
+    </a>
+
+    <a class="link-button" href="https://eitaa.com/TebbeBartarKhosravi" target="_blank">
+      <img src="https://github.com/MalihehKhosravi/mylinks/blob/main/eitaa-logo.png?raw=true" alt="Eitaa">Eitaa Channel
+    </a>
+
+    <div class="contact">
+      <p>📞 <strong><a href="tel:09140649400">09140649400</a></strong></p>
+      <p>✉️ <strong><a href="mailto:MalihehKhosravi4578@gmail.com">MalihehKhosravi4578@gmail.com</a></strong></p>
+    </div>
+
+    <div class="qr-code">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://MalihehKhosravi.github.io/mylinks/&size=150x150" alt="QR Code">
+    </div>
+
+    <div class="lang-switch" onclick="switchToFa()">بازگشت به فارسی</div>
+  </div>
+
+  <script>
+    function switchToEn() {
+      document.getElementById("content-fa").style.display = "none";
+      document.getElementById("content-en").style.display = "block";
+    }
+    function switchToFa() {
+      document.getElementById("content-en").style.display = "none";
+      document.getElementById("content-fa").style.display = "block";
+    }
+  </script>
+</body>
+</html>
